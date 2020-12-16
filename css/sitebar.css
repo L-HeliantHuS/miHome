@@ -1,0 +1,139 @@
+.site_topbar {
+    transition: all 2s; /* 动画 */
+    background-color: black;
+    height: 40px;
+    /*overflow: hidden;*/
+}
+
+.info > a {
+    color: #b0b0b0;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 3px;
+}
+
+.info > a:hover {
+    color: white;
+}
+
+.info > span {
+    color: #424242;
+}
+
+/* 导航栏 */
+.site_topbar .left_info {
+    float: left;
+}
+
+/* 登录注册之类的 */
+.site_topbar .right_info {
+    float: right;
+}
+
+
+/* 购物车相关 */
+.right_info > .buy_car {
+    display: inline-block;
+    position: relative;
+    margin: 0 50px;
+}
+
+.buy_car > .buy_car_menu {
+    width: 222px;
+    right: -20%;
+    top: 100%;
+    height: 0;
+    position: absolute;
+    background-color: white;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 #424242;
+    opacity: 0;
+    visibility: hidden;
+    transition: height 0.2s linear;
+}
+
+.buy_car:hover .buy_car_menu {
+    opacity: 1;
+    visibility: visible;
+    height: 100px;
+}
+
+/* 购物车相关 结束*/
+
+
+/* 第三行的sitebar */
+.site_header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_logo {
+    background-color: orange;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+}
+
+.home_logo .inner_img {
+    display: block;
+    height: 100%;
+    background-image: url("../img/mi-logo.png");
+    transition: background-image 0.5s;
+}
+
+.home_logo:hover .inner_img {
+    background-image: url("../img/mi-home.png");
+}
+
+.home_nav {
+    width: 650px;
+    height: 100%;
+}
+
+.row_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.row_list > li {
+    flex-grow: 1;
+    list-style: none;
+    line-height: 100px;
+}
+
+.row_list a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.home_search {
+    position: relative;
+    display: inline-block;
+    height: 55px;
+    /*overflow: hidden;*/
+
+}
+
+.home_search .search_input {
+    line-height: 48px;
+    position: absolute;
+    bottom: 0;
+    right: 47px;
+    border: 1px solid silver;
+}
+
+.home_search button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 1px solid silver;
+    cursor: pointer;
+}
+

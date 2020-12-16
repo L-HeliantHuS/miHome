@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100%;
+}
+
+.header_banner {
+    transition: all 3s;   /* 动画 */
+    background-image: url("../img/header_banner.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto 120px;
+    width: 100%;
+    height: 120px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 1226px;
+    margin: 0 auto;
+}
+
