@@ -2,7 +2,6 @@
     transition: all 2s; /* 动画 */
     background-color: black;
     height: 40px;
-    /*overflow: hidden;*/
 }
 
 .info > a {
@@ -38,6 +37,13 @@
     margin: 0 50px;
 }
 
+.buy_car img {
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 20px;
+}
+
 .buy_car > .buy_car_menu {
     width: 222px;
     right: -20%;
@@ -61,6 +67,20 @@
     height: 100px;
 }
 
+.buy_car:hover .buy_car_text {
+    color: white;
+}
+
+.hover_buy_car {
+    visibility: hidden;
+}
+
+.buy_car:hover .hover_buy_car {
+     visibility: visible;
+ }
+
+
+
 /* 购物车相关 结束*/
 
 
@@ -78,18 +98,31 @@
     width: 55px;
     height: 55px;
     text-align: center;
+    position: relative;
+    transition: all 0.5s;
 }
 
-.home_logo .inner_img {
-    display: block;
-    height: 100%;
-    background-image: url("../img/mi-logo.png");
-    transition: background-image 0.5s;
+.home_logo > img {
+    position: absolute;
+    transition: all 0.5s;
 }
 
-.home_logo:hover .inner_img {
-    background-image: url("../img/mi-home.png");
+.home_logo > .before {
+    left: -49px;
 }
+
+.home_logo > .after {
+    left: 0;
+}
+
+.home_logo:hover .before {
+    left: 0;
+}
+
+.home_logo:hover .after {
+    left: 49px;
+}
+
 
 .home_nav {
     width: 650px;
@@ -118,7 +151,6 @@
     display: inline-block;
     height: 55px;
     /*overflow: hidden;*/
-
 }
 
 .home_search .search_input {

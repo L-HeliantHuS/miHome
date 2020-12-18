@@ -5,6 +5,9 @@
 	<title>小米商城 - 小米10 Pro、Redmi Note 9、小米MIX Alpha，小米电视官方网站</title>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/sitebar.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<script src="js/vue.js"></script>
+	<script src="js/my.js"></script>
 </head>
 <body>
 	<div class="app">
@@ -46,7 +49,10 @@
 						<span>|</span>
 						<a href="#">消息通知</a>
 						<div class="buy_car info">
-							<a href="#">购物车</a>
+							<a href="#" class="buy_car_text">
+								<img src="img/icon/buy_car.png" alt="" class="default_buy_car">
+								<img src="img/icon/buy_car_hover.png" alt="" class="hover_buy_car">
+								购物车</a>
 							<div class="buy_car_menu">
 								您的购物车没有东西哦.
 							</div>
@@ -56,7 +62,8 @@
 			</div>
 			<div class="container site_header">
 				<div class="home_logo">
-					<a href="#" class="inner_img"></a>
+					<img src="img/mi-logo.png" alt="" class="after">
+					<img src="img/mi-home.png" alt="" class="before">
 				</div>
 				<div class="home_nav">
 					<ul class="row_list">
@@ -99,8 +106,73 @@
 			</div>
 		</header>
 		
-		<div class="container_margin">
-		
+		<div class="container">
+			<!-- 左侧导航栏和Banner -->
+			<div class="home_swiper block_bottom">
+				<div class="home_left_sitebar">
+					<ul class="category_list">
+						<li class="category_item">
+							<a href="#">手机 电话卡</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">电视 盒子</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">笔记本 显示器</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">家电 插线板</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">出行 穿戴</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">智能 路由器</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">电源 配件</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">健康 儿童</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">耳机 音箱</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+						<li class="category_item">
+							<a href="#">生活 箱包</a>
+							<img src="img/icon/icon_right.png" alt="" class="icon_right">
+						</li>
+					</ul>
+				</div>
+				
+				<div class="home_right_banner">
+				
+				</div>
+			</div>
+			
+			<!-- 小导航栏, 小图片 -->
+			<div class="home_link_banner block_bottom">
+				<div class="home_link">
+				
+				</div>
+				
+				
+				<div class="home_small_banner">
+					<img src="img/home_small_banner1.jpg" alt="">
+					<img src="img/home_small_banner2.jpg" alt="" class="block_left">
+					<img src="img/home_small_banner3.jpg" alt="" class="block_left">
+				</div>
+			</div>
+			
 		</div>
 	</div>
 </body>

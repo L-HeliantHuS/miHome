@@ -1,0 +1,80 @@
+.home_swiper {
+    width: 100%;
+    height: 420px;
+}
+
+.home_left_sitebar {
+    width: 234px;
+    height: 420px;
+    background-color: rgba(105,101,101,.6);
+    float: left;
+    /*padding: 20px 0 20px 0;*/
+}
+
+.home_left_sitebar .category_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home_left_sitebar .category_item {
+    height: 42px;
+    flex-grow: 1;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.category_item:hover {
+    background-color: #ff6700;
+}
+
+.category_item > a {
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+
+.icon_right {
+    width: 20px;
+    margin: 10px;
+    float: right;
+}
+
+.home_right_banner {
+    width: calc(1226px - 234px);
+    height: 420px;
+    background-color: blue;
+    float: left;
+}
+
+
+/* 下方小swiper 和 small img banner */
+.home_link_banner {
+    width: 100%;
+    height: 170px;
+}
+
+.home_link_banner > .home_link {
+    width: 234px;
+    height: 100%;
+    background-color: yellow;
+    float: left;
+}
+
+.home_link_banner > .home_small_banner {
+    width: calc(1226px - 15px - 234px);
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.home_small_banner > img {
+    width: 316px;
+    display: block;
+    flex-grow: 1;
+}
+
+
