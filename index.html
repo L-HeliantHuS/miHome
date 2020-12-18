@@ -6,11 +6,10 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/sitebar.css">
 	<link rel="stylesheet" href="css/swiper.css">
-	<script src="js/vue.js"></script>
-	<script src="js/my.js"></script>
+	
 </head>
 <body>
-	<div class="app">
+	<div id="app">
 		<header>
 			<div class="header_banner"></div>
 			<div class="site_topbar">
@@ -99,8 +98,9 @@
 				</div>
 				<div class="home_search">
 					<form action="#" method="post">
-						<input type="text" placeholder="双手电磁炉" class="search_input">
-						<button><img src="img/icon/search_45x45.png" alt=""></button>
+						<input type="text" placeholder=" 双手电磁炉" class="search_input">
+<!--						<button><img src="img/icon/search_45x45.png" alt=""></button>-->
+						<input type="image" src="img/icon/search_45x45.png" class="search_button">
 					</form>
 				</div>
 			</div>
@@ -109,6 +109,9 @@
 		<div class="container">
 			<!-- 左侧导航栏和Banner -->
 			<div class="home_swiper block_bottom">
+				
+				<img :src="current_img" alt="" class="home_banner">
+				
 				<div class="home_left_sitebar">
 					<ul class="category_list">
 						<li class="category_item">
@@ -155,7 +158,8 @@
 				</div>
 				
 				<div class="home_right_banner">
-				
+					<div class="banner_prev" v-on:click="prevImage()"></div>
+					<div class="banner_next" v-on:click="nextImage()"></div>
 				</div>
 			</div>
 			
@@ -164,8 +168,6 @@
 				<div class="home_link">
 				
 				</div>
-				
-				
 				<div class="home_small_banner">
 					<img src="img/home_small_banner1.jpg" alt="">
 					<img src="img/home_small_banner2.jpg" alt="" class="block_left">
@@ -175,5 +177,7 @@
 			
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/my.js"></script>
 </body>
 </html>

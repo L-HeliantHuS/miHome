@@ -3,12 +3,19 @@
     height: 420px;
 }
 
+.home_swiper .home_banner {
+    position: absolute;
+    width: 1226px;
+    height: 420px;
+    z-index: -1;
+}
+
 .home_left_sitebar {
     width: 234px;
     height: 420px;
     background-color: rgba(105,101,101,.6);
     float: left;
-    /*padding: 20px 0 20px 0;*/
+    opacity: 0.8;
 }
 
 .home_left_sitebar .category_list {
@@ -42,11 +49,53 @@
     float: right;
 }
 
+/* 主页banner相关 */
 .home_right_banner {
     width: calc(1226px - 234px);
     height: 420px;
-    background-color: blue;
     float: left;
+    position: relative;
+}
+
+.home_right_banner div {
+    position: absolute;
+}
+
+
+.home_right_banner .banner_prev {
+    height: 69px;
+    width: 41px;
+    left: 0;
+    top: 45%;
+    background-image: url("../img/icon/prev_banner_img.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 20%;
+    cursor: pointer;
+    background-color: #b0b0b0;
+    opacity: 0.3;
+
+}
+.home_right_banner .banner_next {
+    height: 69px;
+    width: 41px;
+    right: 0;
+    top: 45%;
+    background-image: url("../img/icon/next_banner_img.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 20%;
+    cursor: pointer;
+    background-color: #b0b0b0;
+    opacity: 0.5;
+}
+
+.home_right_banner .banner_prev:hover {
+    background-image: url("../img/icon/prev_banner_img_hover.png");
+}
+
+.home_right_banner .banner_next:hover {
+    background-image: url("../img/icon/next_banner_img_hover.png");
 }
 
 

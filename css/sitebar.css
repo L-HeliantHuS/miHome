@@ -76,9 +76,8 @@
 }
 
 .buy_car:hover .hover_buy_car {
-     visibility: visible;
- }
-
+    visibility: visible;
+}
 
 
 /* 购物车相关 结束*/
@@ -100,6 +99,8 @@
     text-align: center;
     position: relative;
     transition: all 0.5s;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .home_logo > img {
@@ -146,6 +147,10 @@
     font-size: 17px;
 }
 
+.row_list a:hover {
+    color: orangered;
+}
+
 .home_search {
     position: relative;
     display: inline-block;
@@ -161,11 +166,17 @@
     border: 1px solid silver;
 }
 
-.home_search button {
+.home_search .search_button {
     position: absolute;
-    bottom: 0;
     right: 0;
-    border: 1px solid silver;
-    cursor: pointer;
+    top: 5px;
+    height: 50px;
+    border: 1px solid;
+    border-color: #b0b0b0 #b0b0b0 #b0b0b0 transparent;
+    transition: background-color 0.5s;
+}
+
+.home_search .search_button:hover {
+    background-color: orangered;
 }
 
