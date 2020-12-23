@@ -18,6 +18,11 @@
     height: 120px;
 }
 
+header {
+    position: relative;
+
+}
+
 .container {
     box-sizing: border-box;
     width: 1226px;
