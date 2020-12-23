@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login - 小米商城登录</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div class="container" style="height: 100%">
+		<div class="logo"></div>
+		
+		<div class="col login-label">
+			<a href="#" id="accLogin">账号登录</a>
+			<span>|</span>
+			<a href="#" id="qrCodeLogin">扫码登录</a>
+		</div>
+		
+		<form action="#" method="post" class="form-box">
+			<div class="form-item">
+				<input type="text" placeholder=" 邮箱/手机账号/小米ID" name="username">
+			</div>
+			
+			<div class="form-item">
+				<input type="password" placeholder=" 密码" name="password">
+			</div>
+			
+			<div class="form-item">
+				<input type="submit" value="登录" name="submit">
+			</div>
+		</form>
+		
+		<div class="col">
+			<a href="#" class="phone-register">手机短信登录/注册</a>
+		</div>
+		
+		
+		<div class="col register-forgetpassword">
+			<a href="#">立即注册</a>
+			<span>|</span>
+			<a href="#">忘记密码</a>
+		</div>
+	</div>
+	<script>
+		let accLogin = document.getElementById("accLogin");
+		accLogin.style.color = "orangered"
+	</script>
+</body>
+</html>

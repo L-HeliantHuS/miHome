@@ -1,0 +1,68 @@
+.logo {
+    width: 200px;
+    height: 98px;
+    background-image: url("../img/mistore_logo.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.login-label > a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.login-label > a:active {
+    color: orangered;
+}
+
+.login-label > span {
+    font-size: 30px;
+}
+
+.form-box {
+    margin: 50px auto;
+    width: 755px;
+    height: 150px;
+}
+
+.form-item {
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 20px;
+    margin-bottom: 15px;
+
+}
+
+.form-item > input {
+    height: 100%;
+    width: 100%;
+}
+
+.form-item > input[type="submit"] {
+    background-color: orangered;
+    border: none;
+    color: white;
+}
+
+.col {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.phone-register {
+    text-decoration: none;
+    color: orangered;
+}
+
+.register-forgetpassword > a{
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.register-forgetpassword > a:hover {
+    color: orangered;
+}
+
