@@ -189,31 +189,38 @@
     font-weight: 700;
 }
 
-/*  */
-.home-channel-list-link {
-    position: relative;
-}
-
-.home-channel-list-link img {
-    position: absolute;
+.home-channel-list-link img{
     bottom: 100%;
 }
 
-.home-channel-list-link .list-before {
+.active-link {
+    position: relative;
+}
+
+.active-link img {
+    position: absolute;
+}
+
+.active-link .list-before {
     display: none;
 }
 
-.home-channel-list-link:hover .list-before {
+.active-link:hover .list-before {
     display: block;
 }
 
-.home-channel-list-link:hover .list-after {
+.active-link:hover .list-after {
     display: none;
 }
 
-.home-channel-list-link:hover span {
+.white_active_hover:hover span {
     color: white;
 }
+
+.orangered_active_hover:hover span {
+    color: orangered;
+}
+
 
 
 .home_link_banner > .home_small_banner {
